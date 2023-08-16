@@ -86,8 +86,8 @@ header > address {
   -webkit-align-self: auto;
   align-self: auto;
 }
-header > nav .logo span,
-header > nav .logo {
+header > nav a span,
+header > nav a {
   color: var(--iris);
   font-size: 18px;
   font-weight: var(--bolder-font);
@@ -95,7 +95,7 @@ header > nav .logo {
   letter-spacing: 0.54px;
   text-transform: uppercase;
 }
-header > nav .logo {
+header > nav a {
   font-family: 'Raleway', sans-serf;
   color: var(--navyblue);
   float: left;
