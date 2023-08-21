@@ -194,6 +194,7 @@ header > address {
 main .solution,
 main .parts,
 main .team,
+main .portfolio,
 footer {
   padding: 188px 156px;
 }
@@ -230,7 +231,8 @@ main .parts {
   padding-bottom: 120px;
 }
 main .parts ul,
-main .team ul {
+main .team ul,
+main .portfolio ul {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -239,7 +241,8 @@ main .team ul {
   align-content: flex-start;
 }
 main .parts h2,
-main .team h2 {
+main .team h2,
+main .portfolio h2 {
   font-size: 36px;
   font-weight: var(--bolder-font);
   line-height: 40px;
@@ -249,7 +252,9 @@ main .team h2 {
   display: none;
   margin-bottom: 72px;
 }
-main .parts .block {
+main .parts .block,
+main .team .person,
+main .portfolio .work {
   display: block;
   flex-grow: 0;
   flex-shrink: 1;
@@ -258,7 +263,6 @@ main .parts .block {
   order: 0;
   margin-right: 24px;
 }
-
 main .parts .block h3 {
   font-size: 20px;
   line-height: 24px;
@@ -269,17 +273,18 @@ main .parts .block h3 {
 main .parts .block p {
   letter-spacing: 0.32px;
 }
+
 /*parts*/
 main .team {
   padding-top: 120px;
   padding-bottom: 120px;
   background: var(--cloud);
 }
-main .team h2 {
+main .team h2,
+main .portfolio h2 {
   display: block;
 }
 main .team ul li {
-  margin-right: 24px;
   padding-bottom: 32px;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
@@ -288,7 +293,8 @@ main .team ul li {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-main .team ul li img {
+main .team ul li img,
+main .portfolio img {
   margin-bottom: 32px;
   display: block;
 }
@@ -299,10 +305,38 @@ main .team ul li h3 {
   letter-spacing: 0.4px;
   margin-bottom: 8px;
 }
-main .team ul li p {
+main .team ul li p,
+main .portfolio .work p {
   letter-spacing: 0.32px;
 }
 /*team*/
+/*portfolio*/
+main .portfolio ul {
+  flex-wrap: wrap;
+}
+main .portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+main .portfolio .work {
+  border: 1px solid var(--cornflower);
+  background: var(--white);
+  padding-bottom: 32px;
+}
+main .portfolio .work:first-child {
+  margin-bottom: 48px;
+}
+main .portfolio .work h3 {
+  font-size: 20px;
+  font-weight: var(--bold-font);
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  padding: 0 16px;
+}
+main .portfolio .work p {
+  padding: 0 16px;
+}
+/*portfolio*/
 /*footer*/
 footer {
   padding-top: 100px;
@@ -318,3 +352,4 @@ footer > p {
   color: var(--cloud);
   letter-spacing: 0.32px;
 }
+/*footer*/
